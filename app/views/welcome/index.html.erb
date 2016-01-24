@@ -1,3 +1,20 @@
 <h1 align="center">Welcome to the Finance Tracker</h1>
 
-<%= link_to "logout", destroy_user_session_path, method: :delete %>
+<div align = "center" class="row">
+  <div class="col-md-4 home-padding">
+
+      <%= link_to 'My Portfolio', my_portfolio_path, class: "btn btn-xl btn-success" %>
+
+  </div>
+  <div class="col-md-4 home-padding">
+
+      <%= link_to 'My profile', edit_registration_path(current_user), class: "btn btn-xl btn-warning" %>
+
+  </div>
+  <div class="col-md-4 home-padding">
+
+      <%= link_to 'My Portfolio', my_portfolio_path, class: "btn btn-xl btn-info" %>
+
+  </div>
+  <br>
+</div>
